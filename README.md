@@ -10,7 +10,7 @@ Welcome to **LinGuard**, your trusty (and a bit over-enthusiastic) sidekick in t
 - 🕵️ **Process Scanning**: Sort of works for now, but we’ll make it smarter and snappier. Think of it as LinGuard’s training montage.
 - 🗂️ **File Integrity Checks**: Coming soon! LinGuard will make sure no files go rogue on your system.
 - 🌐 **Network Monitoring**: Also coming soon. LinGuard will be your digital bouncer, catching network activity that doesn’t belong.
-- 💻 **Cool UI with NiceGUI**: Because who wants to type all day? Look out for a snazzy interface to make scanning fun!
+- 💻 **Cool UI with NiceGUI (Under search of what gui i will use)**: Because who wants to type all day? Look out for a snazzy interface to make scanning fun!
 
 ---
 
