@@ -1,0 +1,41 @@
+{
+    "expected_connections": [
+        {
+            "process": "spotify"
+        },
+        {
+            "process": "obs"
+        },
+        {
+            "process": "obs-browser-page"
+        },
+        {
+            "process": "firefox"
+        },
+        {
+            "process": "code"
+        },
+        {
+            "process": "kdeconnectd"
+        }
+    ],
+    "exceptions": [
+        {
+            "remote_address": "192.168.1.1:67"
+        },
+        {
+            "remote_address": "0.0.0.0:68"
+        }
+    ],
+    "private_networks": [
+        {
+            "ip_range": "10.0.0.0/8"
+        },
+        {
+            "ip_range": "172.16.0.0/12"
+        },
+        {
+            "ip_range": "192.168.0.0/16"
+        }
+    ]
+}

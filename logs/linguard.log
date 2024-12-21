@@ -1,0 +1,48 @@
+2024-12-20 21:03:19,907 - INFO - Starting network scan...
+2024-12-20 21:03:19,907 - INFO - Initializing network baseline configuration...
+2024-12-20 21:03:19,908 - INFO - Baseline configuration loaded successfully.
+2024-12-20 21:03:19,938 - ERROR - Invalid IP address: 2620
+2024-12-20 21:03:19,938 - ERROR - Invalid IP address: 2606
+2024-12-20 21:03:19,939 - INFO - Analyzing flagged connections for process details...
+2024-12-20 21:03:20,396 - WARNING - Detailed flagged connections found: 3
+2024-12-20 21:03:20,397 - WARNING - Flagged (Detailed): {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'process_name': "int() argument must be a string, a bytes-like object or a real number, not 'list'", 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:03:20,397 - WARNING - Flagged (Detailed): {'local_address': '192.168.1.47:46850', 'remote_address': '20.111.1.3:443', 'process_name': 'Unknown', 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:03:20,397 - WARNING - Flagged (Detailed): {'local_address': '192.168.1.47:60912', 'remote_address': '140.82.121.3:22', 'process_name': 'Unknown', 'pid': None, 'subprocesses': [], 'remote_domain': ('lb-140-82-121-3-fra.github.com', [], ['140.82.121.3'])}
+2024-12-20 21:03:20,397 - WARNING - Potentially malicious connections found: 3
+2024-12-20 21:03:20,397 - WARNING - Malicious? {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'pid': 2349, 'process': 'telegram-desktop'}
+2024-12-20 21:03:20,397 - WARNING - Malicious? {'local_address': '192.168.1.47:46850', 'remote_address': '20.111.1.3:443', 'pid': None, 'process': 'Unknown'}
+2024-12-20 21:03:20,397 - WARNING - Malicious? {'local_address': '192.168.1.47:60912', 'remote_address': '140.82.121.3:22', 'pid': None, 'process': 'Unknown'}
+2024-12-20 21:03:20,397 - INFO - Analyzing 3 flagged connections...
+2024-12-20 21:03:20,933 - INFO - Analysis of flagged connections:
+2024-12-20 21:03:20,933 - INFO - {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'process_name': "int() argument must be a string, a bytes-like object or a real number, not 'list'", 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:03:20,933 - INFO - {'local_address': '192.168.1.47:46850', 'remote_address': '20.111.1.3:443', 'process_name': 'Unknown', 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:03:20,933 - INFO - {'local_address': '192.168.1.47:60912', 'remote_address': '140.82.121.3:22', 'process_name': 'Unknown', 'pid': None, 'subprocesses': [], 'remote_domain': ('lb-140-82-121-3-fra.github.com', [], ['140.82.121.3'])}
+2024-12-20 21:03:20,933 - WARNING - Potentially malicious connections detected: 3
+2024-12-20 21:03:20,934 - WARNING - {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'pid': 2349, 'process': 'telegram-desktop'}
+2024-12-20 21:03:20,934 - WARNING - {'local_address': '192.168.1.47:46850', 'remote_address': '20.111.1.3:443', 'pid': None, 'process': 'Unknown'}
+2024-12-20 21:03:20,934 - WARNING - {'local_address': '192.168.1.47:60912', 'remote_address': '140.82.121.3:22', 'pid': None, 'process': 'Unknown'}
+2024-12-20 21:03:20,934 - INFO - Network scan completed.
+2024-12-20 21:05:00,142 - INFO - Starting network scan...
+2024-12-20 21:05:00,143 - INFO - Initializing network baseline configuration...
+2024-12-20 21:05:00,143 - INFO - Baseline configuration loaded successfully.
+2024-12-20 21:05:00,171 - ERROR - Invalid IP address: 2606
+2024-12-20 21:05:00,172 - ERROR - Invalid IP address: 2606
+2024-12-20 21:05:00,172 - ERROR - Invalid IP address: 2620
+2024-12-20 21:05:00,172 - ERROR - Invalid IP address: 2a04
+2024-12-20 21:05:00,172 - ERROR - Invalid IP address: 2a01
+2024-12-20 21:05:00,173 - ERROR - Invalid IP address: 2600
+2024-12-20 21:05:00,173 - INFO - Analyzing flagged connections for process details...
+2024-12-20 21:05:00,440 - WARNING - Detailed flagged connections found: 2
+2024-12-20 21:05:00,440 - WARNING - Flagged (Detailed): {'local_address': '2a02:587:984d:2a00:927e:7b5a:71ae:282f:45990', 'remote_address': '2620:1ec:bdf::45:443', 'process_name': 'Unknown', 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:05:00,440 - WARNING - Flagged (Detailed): {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'process_name': "int() argument must be a string, a bytes-like object or a real number, not 'list'", 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:05:00,440 - WARNING - Potentially malicious connections found: 2
+2024-12-20 21:05:00,440 - WARNING - Malicious? {'local_address': '2a02:587:984d:2a00:927e:7b5a:71ae:282f:45990', 'remote_address': '2620:1ec:bdf::45:443', 'pid': None, 'process': 'Unknown'}
+2024-12-20 21:05:00,440 - WARNING - Malicious? {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'pid': 2349, 'process': 'telegram-desktop'}
+2024-12-20 21:05:00,440 - INFO - Analyzing 2 flagged connections...
+2024-12-20 21:05:00,708 - INFO - Detailed analysis of flagged connections:
+2024-12-20 21:05:00,708 - INFO - {'local_address': '2a02:587:984d:2a00:927e:7b5a:71ae:282f:45990', 'remote_address': '2620:1ec:bdf::45:443', 'process_name': 'Unknown', 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:05:00,708 - INFO - {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'process_name': "int() argument must be a string, a bytes-like object or a real number, not 'list'", 'pid': None, 'subprocesses': [], 'remote_domain': 'Unknown'}
+2024-12-20 21:05:00,709 - WARNING - Potentially malicious connections detected: 2
+2024-12-20 21:05:00,709 - WARNING - {'local_address': '2a02:587:984d:2a00:927e:7b5a:71ae:282f:45990', 'remote_address': '2620:1ec:bdf::45:443', 'pid': None, 'process': 'Unknown'}
+2024-12-20 21:05:00,709 - WARNING - {'local_address': '192.168.1.47:52110', 'remote_address': '149.154.167.92:443', 'pid': 2349, 'process': 'telegram-desktop'}
+2024-12-20 21:05:00,709 - INFO - Network scan completed.

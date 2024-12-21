@@ -7,6 +7,7 @@ Welcome to **LinGuard**, your trusty (and a bit over-enthusiastic) sidekick in t
 ---
 
 ## **What LinGuard Can Do (Someday Soon™)**
+
 - 🕵️ **Process Scanning**: Sort of works for now, but we’ll make it smarter and snappier. Think of it as LinGuard’s training montage.
 - 🗂️ **File Integrity Checks**: Coming soon! LinGuard will make sure no files go rogue on your system.
 - 🌐 **Network Monitoring**: Also coming soon. LinGuard will be your digital bouncer, catching network activity that doesn’t belong.
@@ -15,6 +16,7 @@ Welcome to **LinGuard**, your trusty (and a bit over-enthusiastic) sidekick in t
 ---
 
 ## **LinGuard's Ambitious Dreams**
+
 - **Dynamic Threat Lists**: LinGuard dreams of fetching the latest bad-guy lists from the internet.
 - **Custom Rules**: Your system, your rules! Add your own suspicious patterns for files, processes, or network activity.
 - **World Domination (Linux Edition)**: Okay, maybe just cross-platform support.
@@ -22,28 +24,32 @@ Welcome to **LinGuard**, your trusty (and a bit over-enthusiastic) sidekick in t
 ---
 
 ## **How to Install**
+
 First, make sure you’ve got Python 3.8+ and Linux (LinGuard refuses to work on Windows, for now).
 
 1. Clone this masterpiece:
-    ```bash
-    git clone https://github.com/yourusername/LinGuard.git
-    cd LinGuard
-    ```
+
+   ```bash
+   git clone https://github.com/yourusername/LinGuard.git
+   cd LinGuard
+   ```
 
 2. Install some stuff:
-    ```bash
-    pip install -r requirements.txt
-    ```
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Run LinGuard and feel like a hero:
-    ```bash
-    python main.py
-    ```
+   ```bash
+   python main.py
+   ```
 
 ---
 
 ## **Roadmap**
-- [ ] Make process scanning actually *good*.
+
+- [ ] Make process scanning actually _Works_.
 - [ ] Add file integrity checks.
 - [ ] Start watching network activity like a hawk.
 - [ ] Build a UI that will make people go, “Wow!”
@@ -52,15 +58,17 @@ First, make sure you’ve got Python 3.8+ and Linux (LinGuard refuses to work on
 ---
 
 ## **Contributing**
+
 Want to help LinGuard level up? Open an issue or send in a pull request! Whether you’re adding features, fixing bugs, or just adding emojis to the `README`, we’d love to have you.
 
 ---
 
 ## **License**
+
 LinGuard is licensed under the MIT License, because LinGuard believes in freedom—freedom from malware, and freedom to fork this project.
 
 ---
 
 ## **Disclaimer**
-LinGuard isn’t a replacement for your super-expensive, enterprise-level security solution. It’s more like the enthusiastic intern of security tools. Use it responsibly, or the Linux gods may judge you.
 
+LinGuard isn’t a replacement for your super-expensive, enterprise-level security solution. It’s more like the enthusiastic intern of security tools. Use it responsibly, or the Linux gods may judge you.
