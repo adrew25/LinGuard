@@ -17,7 +17,6 @@ DEFAULT_BASELINE = {
         {"process": "code"},
         {"process": "kdeconnectd"},
     ],
-    # TODO Make a list with parent PIDs and also add the children
     "pid_exceptions": [{"pid": "123"}],
     "exceptions": [
         {"remote_address": "192.168.1.1:67"},
@@ -39,6 +38,25 @@ def initialize_baseline():
         save_config(BASELINE_FILENAME, DEFAULT_BASELINE)
     else:
         logger.info("Baseline configuration loaded successfully.")
+
+
+def is_private_ip(ip, private_networks):
+    try:
+        ip_obj = ip_address(ip)
+        for network in private_networks:
+            ip_range = network.get("ip_range")
+            if ip_range:
+                if ip_obj in ip_network(ip_range):
+                    return True
+
+        return False
+    except ValueError as ve:
+        logger.error(f"Invalid IP format: {ip} - {ve}")
+        return False
+    except Exception as e:
+        # Log general errors
+        logger.error(f"Error while checking if IP is private: {ip} - {e}")
+        return False
 
 
 def check_network_connections(baseline_filename):
@@ -71,7 +89,6 @@ def check_network_connections(baseline_filename):
             else:
                 process = "Unknown"
 
-            # Skip connections without remote address
             if not remote_addr:
                 continue
 
@@ -84,6 +101,7 @@ def check_network_connections(baseline_filename):
             )
 
             remote_ip = remote_addr.split(":")[0]
+
             is_private = is_private_ip(remote_ip, private_networks)
 
             if is_expected or is_private:
@@ -104,7 +122,6 @@ def check_network_connections(baseline_filename):
         except Exception as e:
             logger.error(e)
 
-    # Analyze flagged connections for detailed process information
     logger.info("Analyzing flagged connections for process details...")
     detailed_flagged_connections = inspect_unknown_connections(flagged_connections)
 
@@ -127,16 +144,3 @@ def check_network_connections(baseline_filename):
         "flagged_connections": detailed_flagged_connections,
         "maybe_malicious": maybe_malicious,
     }
-
-
-def is_private_ip(ip, private_networks):
-    """Check if an IP address is within private network ranges."""
-    try:
-        for network in private_networks:
-            ip_range = network["ip_range"]
-            if ip_address(ip) in ip_network(ip_range):
-                return True
-        return False
-    except ValueError:
-        logger.error(f"Invalid IP address: {ip}")
-        return False

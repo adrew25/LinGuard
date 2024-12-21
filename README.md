@@ -11,7 +11,7 @@ Welcome to **LinGuard**, your trusty (and a bit over-enthusiastic) sidekick in t
 - 🕵️ **Process Scanning**: Sort of works for now, but we’ll make it smarter and snappier. Think of it as LinGuard’s training montage.
 - 🗂️ **File Integrity Checks**: Coming soon! LinGuard will make sure no files go rogue on your system.
 - 🌐 **Network Monitoring**: Also coming soon. LinGuard will be your digital bouncer, catching network activity that doesn’t belong.
-- 💻 **Cool UI with NiceGUI (Under search of what gui i will use)**: Because who wants to type all day? Look out for a snazzy interface to make scanning fun!
+- 💻 **Cool UI (Under search of what gui i will use)**: Because who wants to type all day? Look out for a snazzy interface to make scanning fun!
 
 ---
 
@@ -34,7 +34,7 @@ First, make sure you’ve got Python 3.8+ and Linux (LinGuard refuses to work on
    cd LinGuard
    ```
 
-2. Install some stuff:
+2. Install some stuff (use pyenv please):
 
    ```bash
    pip install -r requirements.txt
@@ -49,9 +49,9 @@ First, make sure you’ve got Python 3.8+ and Linux (LinGuard refuses to work on
 
 ## **Roadmap**
 
+- [x] Start watching network activity like a hawk.
 - [ ] Make process scanning actually _Works_.
 - [ ] Add file integrity checks.
-- [ ] Start watching network activity like a hawk.
 - [ ] Build a UI that will make people go, “Wow!”
 - [ ] Add dynamic configuration so you don’t have to mess with the code.
 
@@ -65,9 +65,7 @@ Want to help LinGuard level up? Open an issue or send in a pull request! Whether
 
 ## **License**
 
-LinGuard is licensed under the MIT License, because LinGuard believes in freedom—freedom from malware, and freedom to fork this project.
-
----
+This project will be licensed under the MIT License, which means you can use it for anything from saving the world to impressing your cat—just make sure to give me some credit. Sharing is caring, after all!
 
 ## **Disclaimer**
 

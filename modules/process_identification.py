@@ -1,15 +1,23 @@
 import subprocess
 import socket
 import psutil
+from utils.logger import setup_logger
+from utils.ip_helpers import validate_ip
 
-
-# TODO Put on aproproiate module the functions
+logger = setup_logger()
 
 
 def resolve_ip(ip_address):
     try:
-        return socket.gethostbyaddr(ip_address)
+        if not validate_ip(ip_address):
+            return "Unknown"
+        hostname, _, _ = socket.gethostbyaddr(ip_address)
+        return hostname
     except socket.herror:
+        logger.warning(f"Hostname resolution failed for IP: {ip_address}")
+        return "Unknown"
+    except Exception as e:
+        logger.error(f"Error during hostname resolution for IP {ip_address}")
         return "Unknown"
 
 
